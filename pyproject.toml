@@ -1,0 +1,68 @@
+[tool.commitizen]
+version = "0.1.0"
+changelog_start_rev = "0.1.0"
+tag_format = "v$major.$minor.$patch$prerelease"
+version_files = [
+    "pyproject.toml:version",
+    "jinja_excel/__init__.py"
+]
+
+[tool.poetry]
+name = "jinja-excel"
+version = "0.1.0"
+description = "Jinja extensions with support of rendering xlsx file"
+authors = ["Aiden Lu <allaher@icloud.com>"]
+readme = "README.md"
+keywords = ["jinja", "excel"]
+packages = [
+    { include = "jinja_excel" },
+]
+homepage = "https://github.com/aiden520/jinja-excel"
+repository = "https://github.com/aiden520/jinja-excel"
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+license = "Apache-2.0"
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8"
+jinja2 = ">=3.1.2"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^4.0.1"
+pytest = "^6.2.5"
+
+[tool.black]
+line-length = 89
+target-version = ['py38', 'py39']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+
+  # The following are specific to Black, you probably don't want those.
+  | blib2to3
+  | tests/data
+  | profiling
+)/
+'''
+
+[tool.isort]
+profile = "black"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
