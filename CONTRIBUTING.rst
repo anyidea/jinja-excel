@@ -57,17 +57,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `jinja_excel` for local development.
+Ready to contribute? Here's how to set up `jinja-excel` for local development.
 
-1. Fork the `jinja_excel` repo on GitHub.
+1. Fork the `jinja-excel` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/jinja_excel.git
+    $ git clone git@github.com:your_name_here/jinja-excel.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv jinja_excel
-    $ cd jinja_excel/
+    $ mkvirtualenv jinja-excel
+    $ cd jinja-excel/
     $ python setup.py develop
 
 4. Create a branch for local development::

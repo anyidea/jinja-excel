@@ -12,7 +12,7 @@ To install jinja excel, run this command in your terminal:
 
 .. code-block:: console
 
-    $ pip install jinja_excel
+    $ pip install jinja-excel
 
 This is the preferred method to install jinja excel, as it will always install the most recent stable release.
 
